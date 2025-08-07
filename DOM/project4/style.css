@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: 'poppins';
 }
 
 html, body{
@@ -11,12 +14,8 @@ html, body{
     background-color: black;
 }
 .main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
     
 }
 
@@ -29,4 +28,49 @@ html, body{
     transition: all linear 0.5s;
     mix-blend-mode: difference;
     z-index: 999;
+    scale: 1;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color:  red; */
+    height: 65px;
+    width: 100%;
+    padding: 0px 60px;
+    position: absolute;
+    z-index: 99;
+}
+
+.nav .logo{
+    font-weight: 900;
+    font-size: 20px;
+}
+.nav-items{
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    /* background-color: green; */
+    position: absolute;
+    
+}
+
+.hero-section h1{
+    font-size: 9vw;
+     font-weight: 900;
+}
+
+.rotate {
+    background-color: brown;
+    height: 80px;
+    overflow: hidden;
 }
