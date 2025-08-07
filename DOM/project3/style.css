@@ -9,3 +9,34 @@ html, body{
     width: 100%;
     background-color: cornflowerblue;
 }
+
+.container{
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.container i{
+    color: red;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.7;
+    transition: all ease 0.8;
+    
+}
