@@ -46,6 +46,9 @@ html, body{
 .nav .logo{
     font-weight: 900;
     font-size: 20px;
+    transition: transform 0.2s ease-out;
+    position: relative;
+    display: inline-block;
 }
 .nav-items{
     display: flex;
@@ -69,8 +72,26 @@ html, body{
      font-weight: 900;
 }
 
-.rotate {
-    background-color: brown;
-    height: 80px;
+.nav-rotate {
+    height: 20px;
     overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-rotate-inner {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-rotate:hover .nav-rotate-inner {
+    transform: translateY(-20px);
+}
+
+.nav-rotate h3 {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
