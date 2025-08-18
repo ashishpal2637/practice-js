@@ -53,7 +53,7 @@
 // i ) main stack - it handles the sync part
 // ii ) side stack - it handle async part
 
-// once the main stack finish it check for any completed task in side stack 
+// once the main stack finish it check for any completed task in side stack this is called event loop
 
 // 5. single threaded - runing single task at a time
 // multi threaded - runing task simultaneously at a time
@@ -61,7 +61,7 @@
 // callback - once the async code is completed .
 
 // async code is majourly divide in two parts
-// i) in the first we write the code - async
+// i) in the first we write the code - jo normal code ko aynch bnayega
 // ii) code run after completion
 
 // setInterval(() => {
@@ -70,7 +70,7 @@
 
 // 6. promises 
 // promise - positive Response(then)
-// - negative response 
+// - negative response (catch)
 
 // example 
 // var hello = new Promise(function(res, rej){
@@ -101,12 +101,12 @@
 //     })
 // })
 
-// var hello3 = hello2.then(function(data) {
+//  hello2.then(function(data) {
 //     console.log(data);
 // })
 
 // 7. async await 
-// when we have a fn where we have a async code we can promises but we have to use then after promises. so to make the code concise we can use async await
+// when we have a fn where we have a async code we can use promises but us tym p humko then ka use krna hoga jisse code lmba hojayega . so to make the code concise(chota code) we can use async await
 
 
 // normal way
@@ -133,7 +133,7 @@
 // abcd();
 
 // 8. 5 use case 
-// node main in database
+// node main in database ko handle karne k liye
 // fetch 
 // setinterval 
 // settimeout 
