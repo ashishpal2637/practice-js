@@ -199,3 +199,36 @@
 // abcd(4);
 // abcd(4);
 // abcd(4);
+
+
+// map , filter, reduce
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+// 1. map - to perform something on every element. it returns a new array.
+
+// var newarr = arr.map(function(elem) {
+//     return elem + 1;
+// })
+
+// console.log(newarr);
+
+//destructuring 
+// const [first , second, third, , fifth] = arr;
+// console.log(first,second, third , fifth);
+
+// 2. filter - filter an array on basis of some condition
+
+// var newarr = arr.filter(function(elem) {
+//     return elem % 2 ==0;
+// })
+
+// console.log(newarr);
+
+// 3.  reduce - it returns a single value. genreally used to add, take average, etc on all elements.
+
+// var newarr = arr.reduce(function(acc, elem) {
+//     return acc+elem;
+// }, 0)
+
+// console.log(newarr);
